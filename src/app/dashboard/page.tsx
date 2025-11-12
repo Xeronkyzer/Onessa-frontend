@@ -8,6 +8,9 @@ import ProjectsView from "@/components/dashboard/ProjectsView";
 import NewProjectModal from "@/components/dashboard/NewProjectModal";
 import MessagesView from "@/components/dashboard/MessagesView";
 
+export const dynamic = 'force-dynamic';
+
+
 function DashboardContent() {
   const searchParams = useSearchParams();
   const [currentView, setCurrentView] = useState<"projects" | "messages">("projects");
